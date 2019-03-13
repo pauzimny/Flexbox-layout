@@ -1,0 +1,11 @@
+{
+  "name": "louvre-layout",
+  "version": "1.0.0",
+  "description": "One site layout created by using CSS flexbox and media queries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paulina Zimny",
+  "license": "ISC"
+}
