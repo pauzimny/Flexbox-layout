@@ -1,663 +1,650 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  margin: auto auto;
-  flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: auto auto;
+    flex-shrink: 1;
+
 }
 
 .menu {
-  display: flex;
-  flex-grow: 1;
-  flex-basis: 10%;
-  background-color: #fff;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 10%;
+    background-color: #fff;
 }
 
 .menu__bar {
-  align-self: center;
-  flex-basis: 55%;
-  text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    flex-basis: 55%;
+
 }
+
+.menu__bar img {
+    display: block;
+
+}
+
+
 
 /* desktop */
 .menu__menu {
-  display: none;
+    display: none;
 }
 
 .menu__logo {
-  display: none;
+    display: none;
 }
 
 .container__louvre {
-  display: none;
+    display: none;
 }
 
 .navigation {
-  display: none;
-  align-self: flex-end;
-  align-items: center;
-  margin-top: 50px;
-  width: 785.22px;
-  padding-right: 0;
+    display: none;
+    align-self: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    width: 785.22px;
+    padding-right: 0;
 }
 
 .navigation__list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
 }
 
 .navigation__option {
-  display: flex;
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
+    display: flex;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 
 .active {
-  border-bottom: 4px solid #f54732;
+    border-bottom: 4px solid #f54732;
 }
 
 
 
 .next {
-  display: flex;
-  flex-basis: 45%;
-  flex-grow: 0;
-  padding-right: 28px;
-  justify-content: flex-end;
+    display: flex;
+    flex-basis: 45%;
+    flex-grow: 0;
+    padding-right: 28px;
+    justify-content: flex-end;
 }
 
 .next__button {
-  display: flex;
-  text-decoration: none;
-  justify-content: flex-end;
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
 }
 
 .next__next {
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 
 .next__next {
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1.33px;
-  line-height: 21px;
-  text-transform: uppercase;
-  padding-right: 20px;
-  justify-content: center;
-  align-self: center;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.33px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    justify-content: center;
+    align-self: center;
 }
 
 .next__arrow {
-  width: 20px;
-  justify-content: flex-end;
-  align-self: center;
+    width: 20px;
+    justify-content: flex-end;
+    align-self: center;
 }
 
 .container {
-  display: flex;
-  flex-basis: 80%;
-  max-width: 100vw;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 2;
-  background-image: linear-gradient(-45deg, #ff7338 0%, 36%, #f54732 100%);
+    display: flex;
+    flex-basis: 80%;
+    width: 100vw;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    background-image: linear-gradient(-45deg, #ff7338 0%, 36%, #f54732 100%);
 }
 
 .container__curve {
-  display: none;
+    display: none;
 }
 
 .container__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container__n3ds {
-  padding-top: 50px;
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-  text-align: center;
+    padding-top: 50px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
 }
 
 .container__header {
-  padding-bottom: 10px;
-  color: #000000;
-  font-family: "Abril Fatface", sans-serif;
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 40px;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
+    padding-bottom: 10px;
+    color: #000000;
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .container__header--yellow {
-  color: #ffe788;
+    color: #ffe788;
 }
 
 .container__description {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 209px;
-  width: 260px;
-  justify-content: space-around;
-  align-self: center;
-  flex-wrap: wrap;
-  white-space: normal;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 209px;
+    width: 260px;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    white-space: normal;
 }
 
 .container__paragraph {
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 17px;
-  width: 260px;
-  text-align: center;
-  opacity: 0.7;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    width: 260px;
+    text-align: center;
+    opacity: 0.7;
 }
 
 .buy_ticket {
-  display: flex;
-  flex-basis: 10%;
-  background-color: #fff;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2%;
+    display: flex;
+    flex-basis: 10%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
 }
 
 .buy_ticket__paragraph {
-  flex-basis: 100%;
-  text-align: center;
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 21px;
-  text-transform: uppercase;
+    flex-basis: 100%;
+    text-align: center;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 21px;
+    text-transform: uppercase;
 }
 
 @media only screen and (orientation: portrait) {
-  @media only screen and (min-width: 321px) {
-    .container__header {
-      font-size: 50px;
-      line-height: 50px;
-    }
-  }
+    @media only screen and (min-width: 321px) {
 
-  @media only screen and (min-width: 767px) {
-    .menu__bar img {
-      width: 15%;
+        .container__header {
+            font-size: 50px;
+            line-height: 50px;
+        }
     }
 
-    .next {
-      padding-right: 100px;
+    @media only screen and (min-width: 767px) {
+        .menu__bar img {
+            width: 15%;
+        }
+
+        .next {
+            padding-right: 100px;
+        }
+
+        .next__arrow {
+            font-size: 50px;
+        }
+
+        .next__arrow img {
+            width: 170%;
+        }
+
+        .next__next {
+            font-size: 30px;
+        }
+
+        .container__n3ds {
+            font-size: 40px;
+        }
+
+        .container__header {
+            font-size: 90px;
+            line-height: 90px;
+            padding-bottom: 60px;
+        }
+
+        .container__description {
+            flex-basis: 350px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container__paragraph {
+            font-size: 30px;
+            line-height: 120%;
+            width: 110%;
+        }
+
+        .buy_ticket__paragraph {
+            font-size: 40px;
+        }
     }
 
-    .next__arrow {
-      font-size: 50px;
-    }
+    @media only screen and (min-width: 1024px) and (orientation: portrait) {
+        .container__n3ds {
+            font-size: 40px;
+        }
 
-    .next__arrow img {
-      width: 170%;
-    }
+        .container__header {
+            font-size: 106px;
+            width: 140%;
+            line-height: 110%;
+            letter-spacing: 2px;
+        }
 
-    .next__next {
-      font-size: 30px;
-    }
+        .container__description {
+            flex-basis: 400px;
+            letter-spacing: 2px;
+        }
 
-    .container__n3ds {
-      font-size: 40px;
+        .container__paragraph {
+            font-size: 30px;
+        }
     }
-
-    .container__header {
-      font-size: 90px;
-      line-height: 90px;
-      padding-bottom: 60px;
-    }
-
-    .container__description {
-      flex-basis: 350px;
-      width: 400px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .container__paragraph {
-      font-size: 30px;
-      line-height: 120%;
-      width: 110%;
-    }
-
-    .buy_ticket__paragraph {
-      font-size: 40px;
-    }
-  }
-
-  @media only screen and (min-width: 1024px) and (orientation: portrait) {
-    .container__n3ds {
-      font-size: 40px;
-    }
-
-    .container__header {
-      font-size: 106px;
-      width: 140%;
-      line-height: 110%;
-      letter-spacing: 2px;
-    }
-
-    .container__description {
-      flex-basis: 400px;
-      letter-spacing: 2px;
-    }
-
-    .container__paragraph {
-      font-size: 30px;
-    }
-  }
 }
 
 @media only screen and (orientation: landscape) {
-  .menu {
-    flex-basis: 10%;
-    margin: 10px 0 20px 0;
-  }
-
-  .next__next {
-    font-size: 16px;
-  }
-
-  .container {
-    flex-direction: row;
-    flex-basis: 95%;
-    padding-top: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-    background-image: none;
-  }
-
-  .container__n3ds {
-    display: flex;
-    align-items: center;
-    flex-basis: 15%;
-    height: 100%;
-    margin-right: 70px;
-  }
-
-  .container__n3ds p {
-    width: 200px;
-    transform: rotate(-90deg);
-  }
-
-  .container__inner {
-    display: flex;
-    transform: translate(-120px, -30px);
-  }
-
-  .container__header {
-    font-size: 30px;
-    line-height: 100%;
-    transform: translateY(38px);
-  }
-
-  .container__description {
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    height: 150px;
-    background-image: radial-gradient(35.4% 100%, #ff7338 0%, #f54732 100%);
-    padding: 25px 10px 10px 10px;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .container__paragraph {
-    font-size: 10px;
-    color: white;
-    align-self: center;
-  }
-
-  .buy_ticket__paragraph {
-    padding-top: 5px;
-    font-size: 16px;
-  }
-
-  @media only screen and (min-width: 569px) {
     .menu {
-      flex-basis: 15%;
+        flex-basis: 10%;
+        margin: 10px 0 20px 0;
     }
 
     .next__next {
-      font-size: 18px;
-    }
-
-    .container__n3ds p {
-      font-size: 22px;
-    }
-
-    .container__inner {
-      transform: translate(-130px, -30px);
-    }
-
-    .container__header {
-      font-size: 40px;
-      line-height: 100%;
-      transform: translateY(25px);
-    }
-
-    .container__description {
-      width: 350px;
-    }
-
-    .container__paragraph {
-      font-size: 15px;
-    }
-
-    .buy_ticket__paragraph {
-      padding-bottom: 10px;
-      padding-top: 10px;
-      font-size: 20px;
-    }
-  }
-
-  /* iPad mini */
-  @media only screen and (min-width: 1024px) {
-    .menu {
-      flex-basis: 20%;
-      margin: 10px 0 0px 0;
-      justify-content: space-around;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .menu__bar {
-      display: flex;
-      flex-basis: 33%;
-      padding-left: 5%;
-    }
-
-    .menu__menu {
-      display: block;
-      font-family: "Open Sans", sans-serif;
-      padding-left: 20px;
-      font-weight: 600;
-      font-size: 20px;
-      letter-spacing: 1.33px;
-      text-transform: uppercase;
-    }
-
-    .menu__logo {
-      display: flex;
-      flex-basis: 33%;
-      align-items: center;
-      justify-content: center;
-      align-self: center;
-    }
-
-    .menu__logo img {
-      display: block;
-      width: 30%;
-    }
-
-    .next {
-      padding-right: 5%;
-      flex-basis: 33%;
-    }
-
-    .next__next {
-      font-size: 20px;
-      line-height: 100%;
-    }
-
-    .next__arrow,
-    .menu__bar img {
-      width: 20%;
-    }
-
-    .navigation {
-      display: flex;
-      align-self: flex-start;
-      width: 100%;
+        font-size: 16px;
     }
 
     .container {
-      padding-top: 0;
-      padding-right: 5%;
-      margin-top: 0;
-      flex-direction: row;
-      width: 100vw;
-      flex-grow: 1;
-    }
-
-    .container__curve {
-      display: block;
-      position: absolute;
-      top: 25%;
-      left: -15%;
-      width: 110%;
+        flex-direction: row;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: space-between;
+        background-image: none;
     }
 
     .container__n3ds {
-      transform: rotate(360deg);
-      border-right: 1px solid #ddd;
-      justify-content: center;
+        flex-basis: 15%;
+        height: 100%;
+        padding-top: 0;
     }
 
     .container__n3ds p {
-      position: absolute;
-      top: 40%;
-      left: -80%;
-      width: 400px;
-      font-size: 35px;
-      font-weight: 600;
-      line-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: -15vw;
+        width: 80vh;
+        transform: rotate(-90deg);
     }
 
-    .container__louvre {
-      display: block;
-      margin-left: 15px;
-      flex-basis: 34%;
-      margin-top: 0;
-      flex-grow: 1;
-      height: 100%;
-      background-image: url("assets/N3DS_Guide-Louvre_Lifestyle/png/N3DS_Guide-Louvre_Lifestyle.png");
-      background-size: cover;
-      background-repeat: no-repeat;
+    .container__inner {
+        display: flex;
+        transform: translateY(-10vh);
     }
 
     .container__header {
-      text-align: justify;
-      font-size: 50px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      z-index: 2;
-      transform: translate(-10%, 30%);
-    }
-
-    .container__inner {
-      flex-basis: 20%;
-      padding-right: 5%;
-      justify-content: space-evenly;
-      align-items: center;
-      transform: translate(50px, -5px);
+        font-size: 30px;
+        line-height: 100%;
+        transform: translateY(38px);
     }
 
     .container__description {
-      height: 350px;
-      flex-basis: 50%;
-      width: 290px;
-      justify-content: space-evenly;
-      padding: 20px 20px;
-      transform: translateX(-15%);
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 150px;
+        background-image: radial-gradient(35.4% 100%, #ff7338 0%, #f54732 100%);
+        padding: 25px 10px 10px 10px;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .container__paragraph {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: left;
-      opacity: 0.6;
-      letter-spacing: 1px;
+        font-size: 10px;
+        color: white;
+        align-self: center;
     }
 
     .buy_ticket__paragraph {
-      text-align: center;
-      padding-right: 5%;
-      font-size: 20px;
-      letter-spacing: 3px;
-    }
-  }
-
-  @media only screen and (min-width: 1280px) {
-
-    .menu__menu,
-    .next__next {
-      font-size: 34px;
+        padding-top: 5px;
+        font-size: 16px;
     }
 
-    .container__n3ds {
-      position: relative;
-      flex-basis: 12%;
-      border-right: 1px solid #ddd;
+    @media only screen and (min-width: 569px) {
+        .menu {
+            flex-basis: 15%;
+        }
+
+        .next__next {
+            font-size: 18px;
+        }
+
+        .container__n3ds p {
+            width: 80vh;
+            font-size: 22px;
+            top: 55%;
+            left: -12vw;
+        }
+
+        .container__header {
+            font-size: 40px;
+            line-height: 100%;
+        }
+
+        .container__description {
+            width: 350px;
+        }
+
+        .container__paragraph {
+            font-size: 15px;
+        }
+
+        .buy_ticket__paragraph {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 20px;
+        }
     }
 
-    .container__n3ds p {
-      top: 50%;
-      left: -80%;
-      width: 600px;
-      transform: rotate(-90deg);
-      font-size: 60px;
-      font-weight: 600;
+    /* iPad mini */
+    @media only screen and (min-width: 1024px) and (min-height:768px) {
+        .menu {
+            flex-basis: 20%;
+            margin: 10px 0 0px 0;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu__bar {
+            display: flex;
+            flex-basis: 33%;
+            padding-left: 5%;
+            justify-content: flex-start;
+        }
+
+        .menu__menu {
+            display: block;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: 1.33px;
+            text-transform: uppercase;
+        }
+
+        .menu__logo {
+            display: flex;
+            flex-basis: 33%;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .menu__logo img {
+            display: block;
+            width: 30%;
+        }
+
+        .next {
+            padding-right: 5%;
+            flex-basis: 33%;
+        }
+
+        .next__next {
+            font-size: 20px;
+            line-height: 100%;
+        }
+
+        .next__arrow,
+        .menu__bar img {
+            width: 20%;
+        }
+
+        .navigation {
+            display: flex;
+            align-self: flex-start;
+            width: 100%;
+        }
+
+        .container {
+            padding-top: 0;
+            padding-right: 5%;
+            margin-top: 0;
+            flex-direction: row;
+            width: 100vw;
+        }
+
+        .container__curve {
+            display: block;
+            position: absolute;
+            top: 25%;
+            width: 100vw;
+        }
+
+        .container__n3ds {
+            transform: rotate(360deg);
+            border-right: 1px solid #ddd;
+            justify-content: center;
+        }
+
+        .container__n3ds p {
+            position: absolute;
+            top: 40%;
+            left: -80%;
+            width: 400px;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 100%;
+        }
+
+        .container__louvre {
+            display: block;
+            margin-left: 15px;
+            flex-basis: 34%;
+            margin-top: 0;
+            flex-grow: 1;
+            height: 100%;
+            background-image: url("assets/N3DS_Guide-Louvre_Lifestyle/png/N3DS_Guide-Louvre_Lifestyle.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container__header {
+            text-align: justify;
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            z-index: 2;
+            transform: translate(-10%, 30%);
+        }
+
+        .container__inner {
+            flex-basis: 20%;
+            padding-right: 5%;
+            justify-content: space-evenly;
+            align-items: center;
+            transform: translate(50px, -5px);
+        }
+
+        .container__description {
+            height: 350px;
+            flex-basis: 50%;
+            width: 290px;
+            justify-content: space-evenly;
+            padding: 20px 20px;
+            transform: translateX(-15%);
+        }
+
+        .container__paragraph {
+            font-size: 12px;
+            line-height: 20px;
+            text-align: left;
+            opacity: 0.6;
+            letter-spacing: 1px;
+        }
+
+        .buy_ticket__paragraph {
+            text-align: center;
+            padding-right: 5%;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
     }
 
-    .container__louvre {
-      flex-basis: 25%;
-      margin-left: 200px;
-      flex-grow: 0;
+    @media only screen and (min-width: 1280px) {
+
+        .menu__bar img,
+        .next__arrow {
+            height: 40px;
+        }
+
+        .menu__menu,
+        .next__next {
+            font-size: 40px;
+        }
+
+        .menu__logo {
+            height: 80%;
+        }
+
+        .menu__logo img {
+            width: 30%;
+        }
+
+        .container__n3ds p {
+            top: 70%;
+            left: 10%;
+            font-size: 70px;
+            width: 700px;
+        }
+
+        .container__louvre {
+            flex-basis: 38%;
+            flex-grow: 0;
+            background-position: center;
+        }
+
+        .container__inner {
+            height: 100%;
+            transform: translate(-4vw, -5vh);
+        }
+
+        .container__header {
+            font-size: 120px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            z-index: 2;
+            transform: translate(-3vw, 11vh);
+        }
+
+        .container__description {
+            flex-basis: 35vh;
+            width: 700px;
+        }
+
+        .container__paragraph {
+            width: 80%;
+            font-size: 25px;
+            line-height: 32px;
+        }
+
+        .container__curve {
+            top: 18%;
+        }
+
+        .navigation__option {
+            font-size: 25px;
+        }
+
+        .buy_ticket {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100vw;
+        }
+
+        .buy_ticket__paragraph {
+            text-align: right;
+            font-size: 45px;
+        }
+
+
     }
 
-    .container__inner {
-      flex-basis: 40%;
-      height: 100%;
-      margin-top: 5%;
+    @media only screen and (min-width: 1366px) {
+
+        .container__header {
+            font-size: 130px;
+            transform: translate(-1vw, 11vh);
+        }
+
+        .buy_ticket__paragraph {
+            font-size: 50px;
+        }
     }
 
-    .container__header {
-      width: 100%;
-      font-size: 140px;
-      margin-bottom: -130px;
-      padding-left: 15%;
-      text-align: left;
-    }
 
-    .container__description {
-      width: 50%;
-      flex-basis: 50%;
-    }
+    @media only screen and (min-width: 1920px) {
+        .wrapper {
+            max-width: 5760px;
+        }
 
-    .container__paragraph {
-      font-size: 26px;
-      line-height: 30px;
-      width: 80%;
     }
-
-    .navigation__list {
-      padding-left: 18%;
-    }
-
-    .navigation__option {
-      font-size: 24px;
-    }
-
-    .buy_ticket__paragraph {
-      text-align: right;
-      font-size: 40px;
-      transform: translateY(-50%);
-    }
-  }
-
-  @media only screen and (min-width: 1366px) {
-    .container__n3ds p {
-      left: -5vw;
-      width: 250%;
-      text-align: left;
-      padding-left: 5%;
-    }
-
-    .container__inner {
-      margin-top: 8%;
-    }
-
-    .container__curve {
-      display: block;
-      position: absolute;
-      top: 15%;
-      left: -20%;
-      width: 130%;
-    }
-  }
-
-  @media screen and (min-width: 1920px) {
-
-    .wrapper {
-      max-width: 1920px;
-    }
-
-    .menu__menu,
-    .next__next {
-      font-size: 50px;
-    }
-
-    .container__n3ds p {
-      top: 40vh;
-      left: -5vw;
-      font-size: 90px;
-      width: 1100px;
-      text-align: left;
-    }
-
-    .container__paragraph {
-      font-size: 30px;
-      line-height: 38px;
-    }
-
-    .navigation__option {
-      font-size: 30px;
-    }
-
-    .buy_ticket {
-      transform: translateY(-40vh);
-    }
-
-    .buy_ticket__paragraph {
-      font-size: 70px;
-    }
-  }
 }
